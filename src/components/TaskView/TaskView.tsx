@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { Task } from '../models/Task'
+import { Task } from 'models/Task'
 
 interface Props {
   task: Task
 }
 
-function TaskView(props: Props) {
+export function TaskView(props: Props) {
   const { title } = props.task
   return (
     <div className="list-item">
@@ -14,5 +14,3 @@ function TaskView(props: Props) {
     </div>
   )
 }
-
-export default TaskView

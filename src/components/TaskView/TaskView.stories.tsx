@@ -1,12 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-// import { action } from '@storybook/addon-actions'
 
-import { Task } from '../models/Task'
+import { Task } from 'models/Task'
 
-import TaskView from './TaskView'
+import { TaskView } from './TaskView'
 
-export const task: Task = {
+const task: Task = {
   id: '1',
   title: 'Test title',
   state: 'TODO',
